@@ -5,10 +5,10 @@ package edu.macalester.life;
  *
  * @author Michael Ekstrand <ekstrand@cs.umn.edu>
  */
-public class Conway implements RuleSet {
+public class HighLife implements RuleSet {
 
     public String getName() {
-        return "Conway's Rules";
+        return "HighLife";
     }
 
     /**
@@ -27,27 +27,13 @@ public class Conway implements RuleSet {
         } }else {
                 if (neighborCount == 3) {
                     return true;
+                } else if (neighborCount == 6) {
+                    return true;
                 }
             }
         return isAlive;
     } 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
